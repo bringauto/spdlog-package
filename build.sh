@@ -29,8 +29,6 @@ build() {
 		debug_suffix="d"
 	fi
 	pushd "${build_path}"
-		git clean -xfd
-		git checkout .
 		git checkout v${version}
 		cmake -DCMAKE_BUILD_TYPE=${build_type} \
 			-DSPDLOG_BUILD_EXAMPLE=OFF \

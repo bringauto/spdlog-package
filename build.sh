@@ -45,7 +45,7 @@ build() {
 
 
 
-git clone git@github.com:gabime/spdlog.git "${REPO_PATH}"
+git clone https://github.com/gabime/spdlog.git "${REPO_PATH}"
 
 build "${REPO_PATH}" "${VERSION}" Release
 build "${REPO_PATH}" "${VERSION}" Debug
